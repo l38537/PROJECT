@@ -23,6 +23,6 @@ Character::Character() {
 	}
 	void Character::show() {
 		cout << "Armor " << armor << endl << "Hp " << hp << endl << "Attack speed " << attackSpeed <<
-			endl << "Damage " << damage << endl;
+			endl << "Damage " << damage << endl << "Mana "<< mana <<endl;
 	}
 

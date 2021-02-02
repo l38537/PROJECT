@@ -10,6 +10,7 @@ public:
 
 	int getHeal();
 	int getFireBall();
+	
 	Mage();
 	void show();
 };
