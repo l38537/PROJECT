@@ -1,4 +1,4 @@
 #pragma once
-void ChooseCharacterAndEnemy();
-void YAndECharacter(string, string);
-void fight();
+void ChoosePersonAndFight();
+void YourCharacter(string);
+void EnemyCharacter(string);

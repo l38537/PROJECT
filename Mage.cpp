@@ -11,13 +11,13 @@ int Mage::getFireBall() { return fireball; }
 Mage::Mage() {
 	armor = 2;
 	hp = 300;
-	attackSpeed = 2;
 	damage = 25;
 	mana = 600;
 	fireball = 150;
 	heal = 100;
 }
 void Mage::show() {
+	cout << "Mage:\n";
 	Character::show();
 	cout << "Spell heal(heal hp " << heal << ')' << "(-200mana)" << endl << "Spell fireball(damage " << fireball << ')' << "(-200mana)" << endl << endl;
 }
