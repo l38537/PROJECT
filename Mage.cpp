@@ -11,7 +11,7 @@ int Mage::getFireBall() { return fireball; }
 Mage::Mage() {
 	armor = 2;
 	hp = 300;
-	damage = 25;
+	damage = 40;
 	mana = 600;
 	fireball = 150;
 	heal = 100;
