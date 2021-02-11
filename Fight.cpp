@@ -38,28 +38,29 @@ void ChoosePersonAndFight() {
 				mage.show();
 			}
 			else
-				if (yperson != "paladin" || yperson != "knight" || yperson != "mage") {
+				while (yperson != "paladin" || yperson != "knight" || yperson != "mage") {
 					cout << "Class does not exist, try again:";
 					cin >> yperson;
 					if (yperson == "knight") {
 						cout << "Your class:\n";
 						knight.show();
+						break;
 					}
 					else
 						if (yperson == "paladin") {
 							cout << "Your class:\n";
 							paladin.show();
+							break;
 						}
 						else
 							if (yperson == "mage") {
 								cout << "Your class:\n";
 								mage.show();
+								break;
 							}
 				}
-			
 	system("cls");
 
-	///=====================
 	if (yperson == "mage") {
 		cout << "Select enemy class :\n\n" << "Characteristic ";
 		paladin.show();
@@ -77,19 +78,19 @@ void ChoosePersonAndFight() {
 				paladin.show();
 			}
 			else
-					if (eperson != "paladin" || eperson != "knight") {
-						cout << "Class does not exist, try again:";
-						cin >> eperson;
-						if (eperson == "knight") {
-							cout << "Enemy class\n";
-							knight.show();
-						}
-						else
-							if (eperson == "paladin") {
-								cout << "Enemy class\n";
-								paladin.show();
-							}
+				if (eperson != "paladin" || eperson != "knight") {
+					cout << "Class does not exist, try again:";
+					cin >> eperson;
+					if (eperson == "knight") {
+						cout << "Enemy class\n";
+						knight.show();
 					}
+					else
+						if (eperson == "paladin") {
+							cout << "Enemy class\n";
+							paladin.show();
+						}
+				}
 	}
 	else
 		if (yperson == "knight") {
@@ -155,7 +156,6 @@ void ChoosePersonAndFight() {
 								}
 						}
 			}
-
 	system("cls");
 	YourCharacter(yperson);
 	EnemyCharacter(eperson);
@@ -624,41 +624,41 @@ void ChoosePersonAndFight() {
 
 }
 //==================================
-void YourCharacter(string fyperson){
+void YourCharacter(string yperson){
 	Mage mage;
 	Knight knight;
 	Paladin paladin;
 
-	if (fyperson == "knight") {
+	if (yperson == "knight") {
 		cout << "Your class knight\n";
 		knight.show();
 	}
 	else
-		if (fyperson == "paladin") {
+		if (yperson == "paladin") {
 			cout << "Your class paladin\n";
 			paladin.show();
 		}
 		else
-			if (fyperson == "mage") {
+			if (yperson == "mage") {
 				cout << "Your class mage\n";
 				mage.show();
 			}
 }
-void EnemyCharacter(string feperson) {
+void EnemyCharacter(string eperson) {
 	Mage mage;
 	Knight knight;
 	Paladin paladin;
-	if (feperson == "knight") {
+	if (eperson == "knight") {
 		cout << "Enemy class knight\n";
 		knight.show();
 	}
 	else
-		if (feperson == "paladin") {
+		if (eperson == "paladin") {
 			cout << "Enemy class paladin\n";
 			paladin.show();
 		}
 		else
-			if (feperson == "mage") {
+			if (eperson == "mage") {
 				cout << "Enemy class mage\n";
 				mage.show();
 			}
