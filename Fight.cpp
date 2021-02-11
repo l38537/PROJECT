@@ -194,6 +194,7 @@ void ChoosePersonAndFight() {
 				knight.show();
 				cout << endl << endl;
 				paladin.show();
+				system("cls");
 				//паладин ударил рыцаря
 				cout << "paladin attack knight: " << endl;
 				damage = paladin.getDamage();
@@ -272,6 +273,7 @@ void ChoosePersonAndFight() {
 					mage.show();
 					cout << endl << endl;
 					paladin.show();
+					system("cls");
 					//паладин ударил мага
 					cout << "paladin attack mage: " << endl;
 					damage = paladin.getDamage();
@@ -342,6 +344,7 @@ void ChoosePersonAndFight() {
 				paladin.show();
 				cout << endl << endl;
 				knight.show();
+				system("cls");
 				//рыцарь ударил паладина
 				cout << "knight attack paladin: " << endl;
 				damage = knight.getDamage();
@@ -418,6 +421,7 @@ void ChoosePersonAndFight() {
 					mage.show();
 					cout << endl << endl;
 					knight.show();
+					system("cls");
 					//рыцарь ударил мага
 					cout << "knight attack mage: " << endl;
 					damage = knight.getDamage();
@@ -485,6 +489,7 @@ void ChoosePersonAndFight() {
 				knight.show();
 				cout << endl << endl;
 				mage.show();
+				system("cls");
 				//маг ударил рыцаря
 				cout << "mage attack knight: " << endl;
 				damage = mage.getDamage();
@@ -563,6 +568,7 @@ void ChoosePersonAndFight() {
 					paladin.show();
 					cout << endl << endl;
 					mage.show();
+					system("cls");
 					//маг ударил паладина
 					cout << "mage attack knight: " << endl;
 					damage = mage.getDamage();
